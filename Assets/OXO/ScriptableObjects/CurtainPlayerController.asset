@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 701e2a101f164034e81bced2ad9985d2, type: 3}
+  m_Name: CurtainPlayerController
+  m_EditorClassIdentifier: 
+  MaxCloseSpeed: 6
+  CloseSpeed: 0.1
+  CurtainUpPerClick: 2
+  CurtainOpenDuration: 13
+  PrulleyRotateSpeed: 15
+  PrulleyEase: 5
+  MinCurtainOpenValue: 0
+  MinPredictValueForTrueAnswer: 0
+  RunMultiplier: 0
+  AIAnswerMinDelay: 0
+  AIAnswerMaxDelay: 0
