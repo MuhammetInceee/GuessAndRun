@@ -4,7 +4,6 @@ using Controllers.Money;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-using ElephantSDK;
 using TMPro;
 using UnityEngine.EventSystems;
 
@@ -123,7 +122,6 @@ public class CanvasManager : Singleton<CanvasManager>
         LevelManager.instance.IncreaseLevel();
         LevelManager.instance.RestartScene();
         ES3.Save("list", WallSpawnManager.Instance.tempList);
-        Elephant.LevelCompleted(LevelManager.instance.level);
     }
     public void RestartGame()
     {
@@ -132,7 +130,6 @@ public class CanvasManager : Singleton<CanvasManager>
         
         LevelManager.instance.RestartScene();
         ES3.Save("list", WallSpawnManager.Instance.tempList);
-        Elephant.LevelFailed(LevelManager.instance.level);
     }
 
 

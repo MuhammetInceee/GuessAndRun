@@ -15,7 +15,7 @@ MonoBehaviour:
   MaxCloseSpeed: 9
   CloseSpeed: 0.01
   CurtainUpPerClick: 1.85
-  CurtainOpenDuration: 13
+  CurtainOpenDuration: 8
   PrulleyRotateSpeed: 4
   PrulleyEase: 1
   MinCurtainOpenValue: 55

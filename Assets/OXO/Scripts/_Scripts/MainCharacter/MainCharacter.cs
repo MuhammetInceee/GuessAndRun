@@ -6,7 +6,6 @@ using DG.Tweening;
 using MuhammetInce.DesignPattern.Singleton;
 using RootMotion.FinalIK;
 using UnityEngine;
-using ElephantSDK;
 using Key;
 
 public enum PlayerState
@@ -143,7 +142,6 @@ public class MainCharacter : LazySingleton<MainCharacter>
                 if (playerState == PlayerState.Wait)
                 {
                     runSpeed = GameManager.RunSpeed;
-                    Elephant.LevelStarted(LevelManager.instance.level);
                     playerState = PlayerState.Move;
                     float z = path[0].transform.position.z;
                     transform.DOMoveZ(z, runSpeed).SetSpeedBased().SetEase(Ease.Linear);

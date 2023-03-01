@@ -41,8 +41,8 @@ public class AnswerManager : LazySingleton<AnswerManager>
 
 
         // caller.GetComponent<Button>().interactable = false;
-        MainCharacter.NormalRunActive();
         MainCharacter.ReturnAnimator();
+        MainCharacter.NormalRunActive();
         MainCharacter.playerState = PlayerState.Move;
         MainCharacter.GameCameraSetter();
         MainCharacter.GoNextStep();
